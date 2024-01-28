@@ -48,7 +48,7 @@ docker exec -it pdv-react-app bash
 Dentro do container, instale as dependências do Node usando o comando:
 
 ```bash
-pnpm install
+npm install
 ```
 
 ### 8. Executar o server do projeto
@@ -56,6 +56,6 @@ pnpm install
 Dentro do container, execute o server do projeto usando o comando:
 
 ```bash
-pnpm serve
+npm run serve
 ```
 

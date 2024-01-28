@@ -23,7 +23,6 @@ RUN curl -sL https://deb.nodesource.com/setup_${NODEJS_VERSION}.x | bash - \
     && apt-get update -q && apt-get install -qy nodejs
 ENV NPM_CONFIG_PREFIX=${HOME}/.npm-global
 ENV PATH=$PATH:${HOME}/.npm-global/bin
-RUN npm install -g pnpm
 
 # Create system user
 RUN useradd -G www-data,root -u $uid -d /home/$user $user
